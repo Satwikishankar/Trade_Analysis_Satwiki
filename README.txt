@@ -131,53 +131,6 @@ The main workbook contains 11 professionally formatted sheets:
 
 ---
 
-## 📤 SUBMISSION INSTRUCTIONS
-
-### Step 1: Upload to Google Drive
-1. Go to https://drive.google.com
-2. Click "+ New" → "File upload"
-3. Upload: **Trade_Analysis_Siddharth_Associates_Complete.xlsx**
-4. Wait for upload to complete
-
-### Step 2: Set Sharing Permissions
-1. Right-click the uploaded file
-2. Select "Share" or "Get link"
-3. Change access to: **"Anyone with the link can view"**
-4. Click "Copy link"
-
-### Step 3: Submit the Link
-1. Open the submission form
-2. Paste the Google Drive link in ALL THREE fields:
-   - GitHub Link field
-   - Deployment Link field
-   - Screen Recording Link field
-3. Submit the form
-
-**IMPORTANT**: The assignment instructions state to add the Drive link in all three fields regardless of the field names.
-
-### Step 4: Verify Access
-1. Open an incognito/private browser window
-2. Paste your Google Drive link
-3. Confirm the file opens without requesting permissions
-4. If access denied, return to Step 2
-
----
-
-## ✅ CHECKLIST BEFORE SUBMISSION
-
-- [ ] Excel file has 11 sheets with proper formatting
-- [ ] All formulas are working (test a few calculations)
-- [ ] Year Summary shows YoY growth percentages
-- [ ] HSN Summary shows % contribution
-- [ ] Category breakdowns are complete
-- [ ] File uploaded to Google Drive
-- [ ] Sharing set to "Anyone with the link can view"
-- [ ] Link tested in incognito mode
-- [ ] Link pasted in submission form (all 3 fields)
-- [ ] Form submitted successfully
-
----
-
 ## 📞 ANALYSIS SUMMARY
 
 **Dataset**: 2,079 shipment records
