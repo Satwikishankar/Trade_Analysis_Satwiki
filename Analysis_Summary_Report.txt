@@ -1,0 +1,131 @@
+
+# SIDDHARTH ASSOCIATES - DATA ANALYST ASSIGNMENT
+## Import Trade Data Analysis Report (2017-2025)
+
+### EXECUTIVE SUMMARY
+
+This comprehensive analysis examines import trade data for household steel products from January 2017 to October 2025. The dataset contains **2,079 shipment records** with a total import value of **₹4.19 Billion** and duty payments of **₹1.43 Billion**.
+
+---
+
+### KEY FINDINGS
+
+#### 1. TEMPORAL TRENDS
+- **Peak Year**: 2023 with ₹1.19B (highest in analysis period)
+- **Growth Phase**: 2017-2023 showed consistent growth (avg 41.0% YoY)
+- **Recent Decline**: 2024 (-50.81%) and 2025 (-8.02%) showing market contraction
+- **Total Volume**: 22.35 Million KGS imported over 9 years
+
+#### 2. PRODUCT COMPOSITION
+
+**By HSN Code:**
+- 73239990 (Household Articles): 91.22% of total value
+- 73231000 (Scrubbers/Cleaning): 8.43% of total value
+- 73239390 (Other Articles): 0.35% of total value
+
+**Top Sub-Categories (2024-2025):**
+1. Scrubbers: ₹190M
+2. Cloth Stands: ₹177M
+3. Containers: ₹173M
+4. Lunch Boxes: ₹153M
+5. Hooks: ₹88M
+
+#### 3. COST ECONOMICS
+
+**Duty Structure:**
+- Average Duty Rate: **32.71%**
+- 1371 records (65.9%) have above-average duty
+- Scrubber products show highest duty rates (~44%)
+
+**Per-Unit Costs (Top Models):**
+- STEEL products: Avg ₹351.02/unit
+- STAINLESS products: Avg ₹385.64/unit
+- MILD steel: Avg ₹338.40/unit
+
+#### 4. DATA QUALITY INSIGHTS
+
+**Parsing Success Rates:**
+- Model Names: 100% (2,079/2,079)
+- Quantities: 57.7% (1,200/2,079)
+- Unit Prices (USD): 57.2% (1,189/2,079)
+
+**Data Characteristics:**
+- Single IEC/Supplier: 301049751 (all records)
+- Port: INNSA1 (all records)
+- Date Range: 3210 days
+
+---
+
+### YEAR-WISE BREAKDOWN
+
+| Year | Total Value (INR) | Duty Paid (INR) | Grand Total (INR) | YoY Growth % |
+|------|-------------------|-----------------|-------------------|--------------|
+| 2017 | ₹158M | ₹33M | ₹191M | nan% |
+| 2018 | ₹334M | ₹82M | ₹417M | 118.2% |
+| 2019 | ₹421M | ₹104M | ₹525M | 26.1% |
+| 2020 | ₹349M | ₹120M | ₹470M | -10.6% |
+| 2021 | ₹487M | ₹182M | ₹669M | 42.5% |
+| 2022 | ₹754M | ₹280M | ₹1035M | 54.7% |
+| 2023 | ₹870M | ₹322M | ₹1192M | 15.2% |
+| 2024 | ₹426M | ₹161M | ₹586M | -50.8% |
+| 2025 | ₹393M | ₹146M | ₹539M | -8.0% |
+
+
+---
+
+### METHODOLOGY
+
+**Data Processing:**
+1. Cleaned raw data and extracted year from DATE column
+2. Parsed GOODS DESCRIPTION using regex patterns to extract:
+   - Model names
+   - Quantities (QTY:XXX PCS/SETS/NOS)
+   - Unit prices (USD XXX PER)
+3. Mapped HSN codes to descriptions and categories
+4. Computed derived metrics (Grand Total, Per Unit Costs, Duty %, etc.)
+
+**Key Formulas:**
+- Grand Total_INR = TOTAL VALUE_INR + DUTY PAID_INR
+- Duty % = (DUTY PAID_INR / TOTAL VALUE_INR) × 100
+- YoY Growth % = (Current Year - Previous Year) / Previous Year × 100
+- Per Unit Cost With Duty = Per Unit Cost + (Duty Paid / Quantity)
+
+**Tools Used:**
+- Python (pandas, openpyxl, regex)
+- Microsoft Excel
+- Data cleaning and transformation techniques
+
+---
+
+### DELIVERABLES
+
+The complete analysis is provided in **Trade_Analysis_Siddharth_Associates_Complete.xlsx** containing:
+
+1. **Raw Data**: Original unmodified data (2,079 records)
+2. **Cleaned Data**: Parsed and computed fields
+3. **Year Summary**: Annual totals and YoY growth
+4. **HSN Summary**: Product classification breakdown
+5. **Category Summary**: Main and sub-category analysis
+6. **Model Summary**: Year-wise model performance
+7. **Per Unit Cost Analysis**: Unit economics by model
+8. **Exceptional Duty Analysis**: High-duty transactions
+9. **Supplier Analysis**: IEC-wise trends
+10. **Lookup Tables**: HSN mappings and categories
+11. **Notes & Methodology**: Detailed documentation
+
+---
+
+### RECOMMENDATIONS
+
+1. **Market Analysis**: Investigate reasons for 2024-2025 decline
+2. **Product Focus**: Scrubbers and containers dominate recent imports
+3. **Cost Optimization**: Analyze high-duty products for potential savings
+4. **Data Quality**: Improve consistency in GOODS DESCRIPTION formatting
+5. **Supplier Diversification**: Consider multiple suppliers/IECs
+
+---
+
+**Analysis Prepared**: November 2025  
+**Data Period**: January 2017 - October 2025  
+**Total Records Analyzed**: 2,079  
+**Assignment**: Siddharth Associates Data Analyst Position
